@@ -2,7 +2,7 @@ const artistas = document.getElementById('artistas')
 const artista = document.getElementById('artista').content
 const fragment = document.createDocumentFragment()
 
-let news = []
+let datos = []
 
 document.addEventListener('DOMContentLoaded', () =>{
     artist()
@@ -20,20 +20,32 @@ const artist = () => {
 fetch('https://spotify81.p.rapidapi.com/top_20_by_followers', options)
 .then(response => response.json())
 .then(response => {
-    news = response
+    datos = response
     drawArtist()
     console.log(response)
 })
 .catch(err => console.error(err));
 }
 const drawArtist = () => {
-    news.forEach((item) => {
+    /*
+    datos.forEach((item) => {
 
-        artista.querySelector('p').textContent = item.artist
+        artista.getElementById('nombre').textContent = "Nombre: "+item.artist
+        artista.getElementById('lugar').textContent = "Lugar: "+item.rank
+        artista.getElementById('seguidores').textContent = "Seguidores: "+item.followers
 
         const clone = artista.cloneNode(true)
         fragment.appendChild(clone)
 
     })
+    */
+    for(i = 0; i<50; i++){
+        artista.getElementById('nombre').textContent = datos[i].artist
+        artista.getElementById('lugar').textContent = "TOP "+datos[i].rank
+        artista.getElementById('seguidores').textContent = "Seguidores: "+datos[i].followers
+
+        const clone = artista.cloneNode(true)
+        fragment.appendChild(clone)
+    }
     artistas.appendChild(fragment)
 }
