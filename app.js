@@ -39,7 +39,7 @@ const drawArtist = () => {
 
     })
     */
-    for(i = 0; i<50; i++){
+    for(i = 0; i<20; i++){
         artista.getElementById('nombre').textContent = datos[i].artist
         artista.getElementById('lugar').textContent = "TOP "+datos[i].rank
         artista.getElementById('seguidores').textContent = "Seguidores: "+datos[i].followers

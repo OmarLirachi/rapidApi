@@ -21,6 +21,7 @@ body{
 
 .datos:hover{
     background-color: rgb(0, 0, 0);
+    border-radius: 30px;
     color: rgb(30,216,98);
     transition: .5s;
     font-size: 22px;
@@ -33,7 +34,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around ;
 }
 
 .cont-header{
@@ -51,4 +52,40 @@ body{
 #lugar{
     color: aliceblue;
     font-family: 'Rampart One', cursive;
+}
+
+.main{
+    display: flex;
+    height: 800px;
+}
+
+.caja-img{
+    width: 900px;
+    background-color: rgb(30,216,98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imag{
+    width: 500px;
+    height: 500px;
+}
+
+.titulo-header{
+    color: rgb(30,216,98);
+    text-decoration: none;
+}
+
+
+.titulo-header:hover{
+    color: black;
+    background-color: rgb(30,216,98);
+}
+
+.lista{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 700px;
 }
