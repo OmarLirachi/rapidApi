@@ -48,4 +48,5 @@ const drawArtist = () => {
         fragment.appendChild(clone)
     }
     artistas.appendChild(fragment)
+    cargaCanciones()
 }

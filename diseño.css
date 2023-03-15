@@ -38,6 +38,8 @@ body{
 }
 
 .cont-header{
+    position: fixed;
+    width: 100%;
     height: 100px;
     background-color: black;
     display: flex;
@@ -75,12 +77,14 @@ body{
 .titulo-header{
     color: rgb(30,216,98);
     text-decoration: none;
+    scroll-behavior: auto;
+    animation-duration: 1s;
 }
 
 
 .titulo-header:hover{
-    color: black;
-    background-color: rgb(30,216,98);
+    color: rgb(255, 255, 255);
+    animation-duration: 1s;
 }
 
 .lista{
@@ -88,4 +92,48 @@ body{
     justify-content: space-around;
     margin: 0 auto;
     width: 700px;
+}
+
+.canciones{
+    display: flex;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imag{
+    width: 200px;
+    height: 200px;
+}
+
+.card{
+    width: 300px;
+    margin: 20px;
+}
+
+#nameSong{
+    width: 200px;
+}
+
+.top{
+    transition: 1s;
+    margin-top: 50px;
+    margin-block-end: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toptitle{
+    margin-block-end: 50px;
+}
+
+#btnLoad{
+    display: none;
 }

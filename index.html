@@ -15,13 +15,12 @@
         <div class="cont-header">
             <img src="img/5-Spotify-logo-PNG-betterstudio.com_.webp" id="logo">
             <div class="lista">
-                <a class="titulo-header" href="#cajita">TOP 20 Spotify</a>
-                <a class="titulo-header" href="#cajita">TOP Albums</a>
-                <a class="titulo-header" href="#cajita">TOP Tracks</a>
+                <a class="titulo-header" href="#main">TOP 20 Spotify</a>
+                <a class="titulo-header" href="#top">TOP Tracks</a>
             </div>
         </div>
     </header>
-    <div class="main">
+    <div class="main" id="main">
             <div class="caja-img">
         <img src="img/TopArtistas-Mexico-BadBunny-2022.jpg" class="imag">
     </div>
@@ -38,6 +37,26 @@
             </template>
     </div>
     </div>
+    <div class="top" id="top">
+        <h1 id="toptitle">Top 20 Spotify</h1>
+    </div>
+    <div class="canciones">
+        <div class="boton">
+        <button class="btn" id="btnLoad">Load</button>
+    </div>
+    <div class="contenedor" id="contenedor">
+    </div>
+        <div class="song">
+            <template id="cardsong">
+                <div class="card">
+                    <img src="" alt="" id="imag">
+                    <p id="nameSong">Cancion</p>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script src="song.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>
